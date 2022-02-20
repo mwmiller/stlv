@@ -5,7 +5,7 @@ defmodule Stlv do
   """
 
   @doc """
-  Encode arbitrary binary in sltv form.
+  Encode arbitrary binary in stlv form.
 
   ## Examples
 
@@ -20,7 +20,7 @@ defmodule Stlv do
   def encode(_, _), do: :error
 
   @doc """
-  Decode arbitrary binary in sltv form.
+  Decode arbitrary binary in stlv form.
 
   Returns {type, value, rest_of_binary} on success.
 
