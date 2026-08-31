@@ -46,7 +46,7 @@ defmodule Stlv do
                 :error
 
               true ->
-                <<val::binary-size(len), rest::binary>> = v
+                <<val::binary-size(^len), rest::binary>> = v
                 {type, val, rest}
             end
         end
